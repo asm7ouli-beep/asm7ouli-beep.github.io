@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VaultCam — Privacy Policy</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap policy">
+
+  <header class="site-header">
+    <div class="brand"><a href="../" style="color:inherit;text-decoration:none">Aoufi<span>Labs</span></a></div>
+    <nav class="site-nav">
+      <a href="index.html">VaultCam</a>
+      <a href="../">Home</a>
+    </nav>
+  </header>
+
+  <h1>VaultCam — Privacy Policy</h1>
+  <p class="updated">Last updated: July 11, 2026</p>
+
+  <p>VaultCam ("the app", "we", "our") is a privacy-focused photo and video vault for
+  Android, published by Aoufi Labs. This policy explains what data the app handles,
+  where it lives, and your rights.</p>
+
+  <div class="callout">
+    <strong>The short version:</strong> VaultCam is 100% offline. There are no accounts,
+    no cloud, and no servers. Your photos, videos, notes and passwords are encrypted on
+    your device and are never uploaded, transmitted, or accessible to us or anyone else.
+    The only third-party service in the app is Google AdMob, configured to serve
+    <strong>non-personalized ads only</strong>, and ads never appear inside your vault.
+  </div>
+
+  <h2>1. Data that stays on your device</h2>
+  <p>The following data is stored exclusively on your device and is never transmitted
+  to us or any third party:</p>
+  <ul>
+    <li><strong>Vault contents</strong> — all photos and videos you import or capture are
+    encrypted with AES-256-GCM and indexed in an encrypted (SQLCipher) database.</li>
+    <li><strong>Secure notes and passwords</strong> — encrypted with the same scheme.</li>
+    <li><strong>PIN and authentication data</strong> — your PIN is processed with PBKDF2
+    key derivation and stored only in hashed/derived form. We never see your PIN.</li>
+    <li><strong>Break-in log</strong> — if enabled, photos taken on failed PIN attempts,
+    with timestamps, are stored locally only.</li>
+    <li><strong>Settings and preferences</strong> — stored in encrypted preferences.</li>
+    <li><strong>Backups</strong> — created only when you choose, as a passphrase-encrypted
+    file saved where you decide (e.g. your own storage or your own cloud drive).
+    We never receive a copy.</li>
+  </ul>
+  <p>Uninstalling the app (or clearing its data) permanently destroys the vault and its
+  encryption keys. Because nothing is stored server-side, there is no server copy for
+  anyone to delete — or to leak.</p>
+
+  <h2>2. Data we collect</h2>
+  <p><strong>None.</strong> VaultCam has no account system, no analytics SDK, and no
+  server of ours. We cannot access, view, or recover your vault.</p>
+
+  <h2>3. Permissions the app requests</h2>
+  <ul>
+    <li><strong>Camera</strong> — to take photos directly into the vault, and (if you
+    enable it) to capture a break-in selfie on failed PIN attempts.</li>
+    <li><strong>Photos/Media</strong> — to import items you select into the encrypted vault,
+    and to delete the originals from your gallery when you confirm it.</li>
+    <li><strong>Biometrics</strong> — optional unlock. Biometric data is handled entirely by
+    Android and is never accessible to the app.</li>
+    <li><strong>Approximate location (optional)</strong> — only used, if granted, to record
+    where a failed unlock attempt happened in your local break-in log. Never transmitted.</li>
+    <li><strong>Internet</strong> — used solely to display ads on ad-eligible screens
+    (see below). Vault data is never transmitted.</li>
+  </ul>
+
+  <h2>4. Advertising (Google AdMob)</h2>
+  <ul>
+    <li>The free version shows small banner ads <strong>only on the Settings and
+    How-to-Use screens</strong> — never inside the vault, next to your photos, in the
+    camera, notes, or on PIN screens. There are no full-screen ads.</li>
+    <li>All ad requests are configured as <strong>non-personalized</strong> ("npa=1").
+    AdMob may still process limited device data (such as IP address and device
+    identifiers) for fraud prevention, frequency capping and aggregate measurement, as
+    described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>
+    and <a href="https://policies.google.com/technologies/ads">Google's Advertising
+    Policy</a>.</li>
+    <li>Where required (e.g. EEA/UK), a consent dialog from Google's User Messaging
+    Platform is shown before any ad loads.</li>
+    <li>The advertising SDK is initialized only when you open an ad-eligible screen —
+    no ad-network traffic occurs while you browse your vault.</li>
+  </ul>
+
+  <h2>5. Children</h2>
+  <p>VaultCam is not directed at children under 13 and does not knowingly collect
+  personal information from anyone, including children.</p>
+
+  <h2>6. Data security</h2>
+  <p>Vault items are encrypted with AES-256-GCM using per-file keys wrapped by a master
+  key derived from your PIN. The database is encrypted with SQLCipher. Screenshots and
+  screen recording are blocked on vault screens. No security is perfect, but the
+  strongest guarantee VaultCam offers is architectural: your data simply never leaves
+  your device.</p>
+
+  <h2>7. Your rights</h2>
+  <p>Because we hold no data about you, requests for access, correction, or deletion
+  can be satisfied entirely on your device: delete items in-app, or uninstall the app
+  to erase everything. For anything related to AdMob's processing, see Google's privacy
+  controls at <a href="https://myadcenter.google.com">myadcenter.google.com</a>.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>If we change this policy, the new version will be posted at this address with an
+  updated date above.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions? Email <a href="mailto:andr.aoufi.riadh@gmail.com">andr.aoufi.riadh@gmail.com</a>.</p>
+
+  <footer class="site-footer">
+    <div class="apps">
+      <a href="../vaultcam/">VaultCam</a>
+      <a href="../boardvision/">Board Vision</a>
+      <a href="../brainarena/">Brain Arena</a>
+    </div>
+    <div>Support: <a href="mailto:andr.aoufi.riadh@gmail.com">andr.aoufi.riadh@gmail.com</a></div>
+    <div>© 2026 Aoufi Labs</div>
+  </footer>
+
+</div>
+</body>
+</html>
